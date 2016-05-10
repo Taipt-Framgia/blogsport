@@ -1,0 +1,64 @@
+/*
+Theme Name: blogsport theme 
+Theme URI: http://localhost
+Author: TaiPT - framgia lnc
+Author URI: http://localhost
+Description: This is my first theme
+Version: 1.0
+Tags: none
+Text Domain: first theme
+*/
+html,
+body {
+	background-color: #ECA0A0!important;
+}
+.top-menu:after{
+	display: table;
+	content: " ";
+	clear: both;
+}
+.content {
+	width: 1024px;
+	margin: auto;
+	background-color: #ECA0A0;
+	border: 1px solid #D1D1D1;
+	/* padding: 10px 25px; */
+	overflow: hidden;
+}
+#main-content {
+	width: 66%;
+	float: left;
+	/* margin-right: 10px; */
+}
+#sidebar {
+	width: 31.6%;
+	float: right;
+	/* margin-left: 20px; */
+	padding-left: 20px;
+	background-color: #5A5A5A;
+}
+
+.post {
+	margin-bottom: 20px;
+	background-color: #ffffff;
+}
+/* override css bootstrap */
+.entry-post img {
+	width: 100%;
+}
+.carousel-inner > .item > img {
+	margin: auto;
+}
+/* css post content */
+.post-content {
+	padding-left: 10px;
+	padding-bottom: 15px;
+	padding-right: 20px;
+}
+
+#carousel {
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1024px;
+}
