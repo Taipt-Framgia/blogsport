@@ -40,7 +40,7 @@
 
 	 <?php else : // comments are closed ?>
 		<!-- If comments are closed. -->
-		<p class="nocomments">Comments are closed.</p>
+		<p class="nocomments"><?php _e('Comments are closed.','taipt91') ?></p>
 
 	<?php endif; ?>
 <?php endif; ?>

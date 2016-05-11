@@ -12,9 +12,9 @@
 	    	<h4 class="post-header"><a href="<?php the_permalink(); ?>"><b><?php the_title(); ?></b></a></h4>
 	    	<p class="entry-meta">
 	    		<?php 
-	    			printf(__('By <a href="%1$s">%2$s</a> at %3$s','taipt91'),
-	    				get_author_posts_url(get_the_author_meta('ID')),
-	    				get_the_author(), 
+	    			echo __('By ','taipt91');
+	    			print_author_link();
+	    			printf(__('at %1$s','taipt91'), 
 	    				get_the_date()); 
 	    			?>
 	    	</p>

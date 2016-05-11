@@ -11,6 +11,7 @@ Text Domain: first theme
 html,
 body {
 	background-color: #ECA0A0!important;
+	background-image: url('http://demo.mythemeshop.com/magxp-sports/files/2014/04/wallpaper-1437456.jpg');
 }
 .top-menu:after{
 	display: table;
@@ -18,6 +19,7 @@ body {
 	clear: both;
 }
 .content {
+	background-image: url('http://demo.mythemeshop.com/magxp-sports/files/2014/04/wallpaper-1437456.jpg');
 	width: 1024px;
 	margin: auto;
 	background-color: #ECA0A0;
@@ -80,4 +82,31 @@ footer {
 .section-css {
 	margin-bottom: 20px;
 	background-color: #FFFFFF;
+	overflow: hidden;
+}
+.author-avatar {
+	float: left;
+	margin: 10px;
+	border:1px solid #BBAFAF;
+	border-radius: 5px;
+}
+.author-bio {
+	padding-left: 120px;
+	padding-right: 15px;
+}
+h4.title {
+
+}
+.relate-post-content {
+	padding-top: 20px;
+}
+
+a {
+	text-decoration: none;
+	color: #382626!important;
+}
+a:hover {
+	text-decoration: none!important;
+	color:#ED9696!important;
+	transition: all 0.50s linear 0s;
 }

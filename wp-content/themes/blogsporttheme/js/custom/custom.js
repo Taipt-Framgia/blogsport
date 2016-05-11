@@ -15,3 +15,6 @@ jQuery(document).ready(function(ev) {
 	var height = width/2;
 	jQuery('.entry-post img').css('height',height);
 });
+jQuery(document).ready(function(ev) {
+	jQuery('.carousel').carousel();
+});

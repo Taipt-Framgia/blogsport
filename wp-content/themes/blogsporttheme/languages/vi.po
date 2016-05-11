@@ -1,0 +1,87 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Translate VietNamese For Blogsport\n"
+"POT-Creation-Date: 2016-05-11 16:05+0800\n"
+"PO-Revision-Date: 2016-05-11 16:05+0800\n"
+"Last-Translator: \n"
+"Language-Team: Taipt-Framgia <phungbk21@gmail.com>\n"
+"Language: VietNamese\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../content-detail.php:14
+#, php-format
+msgid "By <a href=\"%1$s\">%2$s</a> at %3$s in %4$s"
+msgstr "Đăng bởi <a href=\"%1$s\">%2$s</a> lúc %3$s trong %4$s"
+
+#: ../content-detail.php:30
+msgid "Author Infomation"
+msgstr "Thông Tin Tác Giả."
+
+#: ../content-detail.php:37
+msgid "Relate Post"
+msgstr "Các Bài Liên Quan."
+
+#: ../functions.php:29
+msgid "Top Menu"
+msgstr ""
+
+#: ../functions.php:32
+msgid "Right Sidebar"
+msgstr ""
+
+#: ../functions.php:34
+msgid "This is right sidebar"
+msgstr "Đây là sidebar bên phải."
+
+#: ../functions.php:79
+msgid "Read more"
+msgstr "Đọc thêm."
+
+#: ../functions.php:156 ../content.php:15
+msgid "By "
+msgstr "Đăng bởi "
+
+#: ../functions.php:189
+msgid "&larr; Previous"
+msgstr "Trang Trước."
+
+#: ../functions.php:190
+msgid "Next &rarr;"
+msgstr "Trang Sau."
+
+#: ../comments.php:43
+msgid "Comments are closed."
+msgstr "Nhận xét bị đóng."
+
+#: ../archive.php:6
+#, php-format
+msgid "%1$s Archive"
+msgstr "Lưu trữ của %1$s"
+
+#: ../sidebar.php:5
+msgid "This is widget area. Go to Appearance -> Widget to add some widget."
+msgstr ""
+
+#: ../footer.php:4
+msgid "All right reserved"
+msgstr ""
+
+#: ../footer.php:4
+msgid "This website is proundly to use Wordpress"
+msgstr ""
+
+#: ../content.php:17
+#, php-format
+msgid "at %1$s"
+msgstr "lúc %1$s"
+
+#: ../index.php:8
+msgid "LASTEST"
+msgstr "Mới Nhất."

@@ -27,14 +27,14 @@
 </article>
 
 <div class="author-box single">
-	<h3>Author infomation</h3>
+	<h3><?php _e('Author Infomation','taipt91'); ?></h3>
 	<div class="author-content section-css">
 		<?php get_template_part('author-bio')?>
 	</div>
 </div>
 
 <div class="relate-post">
-		<h3>Relate posts</h3>
+		<h3><?php _e('Relate Post','taipt91'); ?></h3>
 		<div class="relate-post-content section-css">
 			<?php do_action('relate_hook')?>
 		</div>

@@ -1,5 +1,7 @@
-<?php
-	printf(__('Written by <a href="%1$s">%2$s</a>','taipt91'),
-		get_author_posts_url(get_the_author_meta('ID')),
-			get_the_author()); 
- ?>
+<div class="author-avatar">
+	<?php echo get_avatar(get_the_author_meta('ID')) ?>
+</div>
+<div class="author-bio">
+	<h3><?php print_author_link(); ?></h3>
+	<p><?php echo get_the_author_meta('description') ?></p>
+</div>
