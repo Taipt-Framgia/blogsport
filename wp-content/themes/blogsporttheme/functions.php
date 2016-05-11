@@ -79,3 +79,58 @@ function post_readmore() {
 	return '...<a class="read-more" href="'.get_the_permalink(get_the_ID()). '"> '.__('Read more','taipt91').'</a>';
 }	
 add_filter('excerpt_more','post_readmore');
+//add carousel
+if (! function_exists('add_carousel')) {
+	function add_carousel($id) {?>
+
+		<div id="carousel-sticky-posts-<?php echo $id;?>" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li class="active" data-target="#carousel-sticky-posts-<?php echo $id;?>" data-slide-to="0"></li>
+				<li class="" data-target="#carousel-sticky-posts-<?php echo $id;?>" data-slide-to="1"></li>
+				<li class="" data-target="#carousel-sticky-posts-<?php echo $id;?>" data-slide-to="2"></li>
+			</ol>
+
+			<div class="carousel-inner" role="listbox">
+				<div class="active item" >
+					<img src="http://www.imag.de/images/10_welt_startseite.png" alt="">
+					<div class="carousel-caption">
+						0
+					</div>
+				</div>
+
+				<div class="item">
+					<img src="http://www.imag.de/images/10_welt_startseite.png" alt="">
+					<div class="carousel-caption">
+						1
+					</div>
+				</div>
+
+				<div class="item">
+					<img src="http://www.imag.de/images/10_welt_startseite.png" alt="">
+					<div class="carousel-caption">
+						2
+					</div>
+				</div>
+			</div>
+
+			<a class="left carousel-control" href="#carousel-sticky-posts-<?php echo $id;?>" role="botton" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+
+			<a class="right carousel-control" href="#carousel-sticky-posts-<?php echo $id;?>" role="botton" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	<?php }
+}
+add_action('carousel_hook','add_carousel',10,1);
+
+//add relate
+if (! function_exists('add_relate')) {
+	function add_relate() {
+		echo '<h3>This is relate post place</h3>';
+	}
+}
+add_action('relate_hook','add_relate');

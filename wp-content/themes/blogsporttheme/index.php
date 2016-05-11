@@ -2,7 +2,7 @@
 <div class="content">
 	<section id="main-content">
 		<div class="newest-post">
-			<?php do_action('add_'); ?>
+			<?php do_action('carousel_hook',2); ?>
 		</div>
 		<div class="lastest-post">
 			<h4>Lastest</h4>
@@ -12,6 +12,7 @@
 						the_post();
 						get_template_part('content',get_post_format());
 					endwhile;
+						echo paginate_links();
 				else :
 						get_template_part('content','none');
 				endif; 

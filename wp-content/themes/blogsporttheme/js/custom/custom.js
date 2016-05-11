@@ -10,3 +10,8 @@ jQuery(document).ready(function(){
 		}
 	});
 });
+jQuery(document).ready(function(ev) {
+	var width = jQuery('.entry-post img').width();
+	var height = width/2;
+	jQuery('.entry-post img').css('height',height);
+});
