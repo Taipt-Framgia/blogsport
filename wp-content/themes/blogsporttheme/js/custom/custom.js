@@ -16,5 +16,8 @@ jQuery(document).ready(function(ev) {
 	jQuery('.entry-post img').css('height',height);
 });
 jQuery(document).ready(function(ev) {
-	jQuery('.carousel').carousel();
+	jQuery('#carousel-sticky-posts-1 .carousel-indicators li:first').addClass('active');
+	jQuery('#carousel-sticky-posts-1 .carousel-inner .item:first').addClass('active');
+	jQuery('#carousel-sticky-posts-2 .carousel-indicators li:first').addClass('active');
+	jQuery('#carousel-sticky-posts-2 .carousel-inner .item:first').addClass('active');
 });

@@ -11,7 +11,9 @@ Text Domain: first theme
 html,
 body {
 	background-color: #ECA0A0!important;
-	background-image: url('http://demo.mythemeshop.com/magxp-sports/files/2014/04/wallpaper-1437456.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-image: url('http://demo.mythemeshop.com/magxp-sports/files/2014/04/wallpaper-1437456.jpg	');
 }
 .top-menu:after{
 	display: table;
@@ -26,6 +28,8 @@ body {
 	border: 1px solid #D1D1D1;
 	/* padding: 10px 25px; */
 	overflow: hidden;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 #main-content {
 	width: 66%;
@@ -36,8 +40,21 @@ body {
 	width: 31.6%;
 	float: right;
 	/* margin-left: 20px; */
-	padding-left: 20px;
-	background-color: #5A5A5A;
+	padding-left: 15px;
+}
+/* reset sidebar */
+#sidebar {
+	font-size: 0.9em;
+}
+#sidebar ul,
+#sidebar ol,
+#sidebar li {
+	margin: 0;
+	list-style: none;
+	padding: 0;
+}
+.search-form {
+	margin-bottom: 20px;
 }
 
 .post {
@@ -101,12 +118,38 @@ h4.title {
 	padding-top: 20px;
 }
 
-a {
+.container a {
 	text-decoration: none;
 	color: #382626!important;
 }
-a:hover {
+.container a:hover {
 	text-decoration: none!important;
 	color:#ED9696!important;
 	transition: all 0.50s linear 0s;
+}
+.top-menu {
+	background-color: #130000;
+}
+.top-menu .sf-menu {
+	margin-bottom: 0em!important;
+}
+.top-menu a {
+	color: #ffffff !important;
+	font-weight: bold;
+}
+.top-menu ul li a {
+	background-color: #130000;
+}
+.top-menu ul li a:hover {
+	background-color: #5C4C4C;
+}
+.top-menu ul li a:focus {
+	background-color: #5C4C4C;
+}
+.widgettitle {
+	background-color: #DB6666;
+}
+h3.widgettitle{
+	margin: 0;
+	padding: 15px 0;
 }

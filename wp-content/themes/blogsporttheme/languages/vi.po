@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Translate VietNamese For Blogsport\n"
-"POT-Creation-Date: 2016-05-11 16:05+0800\n"
-"PO-Revision-Date: 2016-05-11 16:05+0800\n"
+"POT-Creation-Date: 2016-05-12 08:14+0800\n"
+"PO-Revision-Date: 2016-05-12 08:17+0800\n"
 "Last-Translator: \n"
 "Language-Team: Taipt-Framgia <phungbk21@gmail.com>\n"
 "Language: VietNamese\n"
@@ -34,7 +34,7 @@ msgstr ""
 
 #: ../functions.php:32
 msgid "Right Sidebar"
-msgstr ""
+msgstr "Sidebar phải."
 
 #: ../functions.php:34
 msgid "This is right sidebar"
@@ -44,21 +44,46 @@ msgstr "Đây là sidebar bên phải."
 msgid "Read more"
 msgstr "Đọc thêm."
 
-#: ../functions.php:156 ../content.php:15
+#: ../functions.php:155 ../content.php:15
 msgid "By "
 msgstr "Đăng bởi "
 
-#: ../functions.php:189
+#: ../functions.php:188
 msgid "&larr; Previous"
 msgstr "Trang Trước."
 
-#: ../functions.php:190
+#: ../functions.php:189
 msgid "Next &rarr;"
 msgstr "Trang Sau."
+
+#: ../comments.php:21
+msgid "No Responses"
+msgstr "Không có bình luận nào."
+
+#: ../comments.php:21
+msgid "One Response"
+msgstr "1 Bình Luận."
+
+#: ../comments.php:21
+msgid "% Responses"
+msgstr "% Bình Luận."
 
 #: ../comments.php:43
 msgid "Comments are closed."
 msgstr "Nhận xét bị đóng."
+
+#: ../comments.php:53
+msgid "Leave a Reply"
+msgstr "Bình Luận."
+
+#: ../comments.php:53
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr "Phản hồi cho %s."
+
+#: ../comments.php:86
+msgid "Submit Comment"
+msgstr "Gửi Bình Luận."
 
 #: ../archive.php:6
 #, php-format
@@ -75,7 +100,7 @@ msgstr ""
 
 #: ../footer.php:4
 msgid "This website is proundly to use Wordpress"
-msgstr ""
+msgstr "Trang Web này sử dụng "
 
 #: ../content.php:17
 #, php-format

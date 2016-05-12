@@ -79,9 +79,67 @@ function post_readmore() {
 	return '...<a class="read-more" href="'.get_the_permalink(get_the_ID()). '"> '.__('Read more','taipt91').'</a>';
 }	
 add_filter('excerpt_more','post_readmore');
+
 //add carousel
 if (! function_exists('add_carousel')) {
-	function add_carousel($id) {?>
+	function add_carousel($id,$number) {
+		$i = 0;
+		$args_query = array (
+			'posts_per_page' => $number,
+			'post_type' => array ('post'),
+			'order' => 'DESC',
+			'orderby' => 'rand');
+		$my_query = new WP_Query($args_query);
+		if($my_query->have_posts()) : ?>
+			<div id="carousel-sticky-posts-<?php echo $id;?>" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<?php while ($my_query->have_posts()) :?>
+					<?php $my_query->the_post(); ?>
+						<li class="" data-target="#carousel-sticky-posts-<?php echo $id;?>" data-slide-to="<?php echo $i++; ?>"></li>
+					<?php endwhile; ?>
+				</ol>
+
+				<div class="carousel-inner" role="listbox">
+					<?php while( $my_query->have_posts()) :?>
+					<?php $my_query->the_post(); ?>
+						<div class="item" >
+							<?php if (has_post_thumbnail()): ?>
+	  								<?php echo '<img href="'.the_post_thumbnail('full').'">'; ?>
+	  						<?php else: ?>
+	  							<img src="http://placehold.it/1200x600">
+	  						<?php endif; ?>
+							<div class="carousel-caption">
+								<?php if($id==1) :?>
+								<h3><?php the_title(); ?></h3>
+							<?php else : ?>
+								<h4><?php the_title(); ?></h4>
+							<?php endif; ?>
+							</div>
+						</div>
+					<?php endwhile; ?>
+				</div>
+
+				<a class="left carousel-control" href="#carousel-sticky-posts-<?php echo $id;?>" role="botton" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+				</a>
+
+				<a class="right carousel-control" href="#carousel-sticky-posts-<?php echo $id;?>" role="botton" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+				</a>
+			</div>
+
+		<?php 
+		else :
+			do_action('default_carousel_hook');
+		endif;
+	}
+}
+add_action('carousel_hook','add_carousel',10,2);
+
+if (! function_exists('default_carousel')) {
+	function default_carousel($id) {?>
 		<div id="carousel-sticky-posts-<?php echo $id;?>" class="carousel slide" data-ride="carousel">
 			<ol class="carousel-indicators">
 				<li class="active" data-target="#carousel-sticky-posts-<?php echo $id;?>" data-slide-to="0"></li>
@@ -124,7 +182,8 @@ if (! function_exists('add_carousel')) {
 		</div>
 	<?php }
 }
-add_action('carousel_hook','add_carousel',10,1);
+add_action('default_carousel_hook','default_carousel',10,1);
+
 
 //add relate
 if (! function_exists('add_relate')) {
