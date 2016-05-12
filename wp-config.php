@@ -88,6 +88,8 @@ define('FTP_PLUGIN_DIR ', '/var/www/html/blogsport/wp-content/plugins/');
 define('FTP_USER', 'FRAMGIA\phung.the.tai');
 define('FTP_PASS', '26031991tai@');
 define('FTP_HOST', 'localhost');
+//define  language for translate
+define('WPLANG','vi');
 
 /* That's all, stop editing! Happy blogging. */
 

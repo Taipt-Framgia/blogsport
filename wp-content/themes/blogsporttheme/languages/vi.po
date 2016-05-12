@@ -1,0 +1,144 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Translate VietNamese For Blogsport\n"
+"POT-Creation-Date: 2016-05-12 16:28+0800\n"
+"PO-Revision-Date: 2016-05-12 16:29+0800\n"
+"Last-Translator: \n"
+"Language-Team: Taipt-Framgia <phungbk21@gmail.com>\n"
+"Language: VietNamese\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../content-detail.php:14
+#, php-format
+msgid "By <a href=\"%1$s\">%2$s</a> at %3$s in %4$s"
+msgstr "Đăng bởi <a href=\"%1$s\">%2$s</a> lúc %3$s trong %4$s"
+
+#: ../content-detail.php:30
+msgid "Author Infomation"
+msgstr "Thông Tin Tác Giả."
+
+#: ../content-detail.php:37
+msgid "Relate Post"
+msgstr "Các Bài Liên Quan."
+
+#: ../functions.php:29
+msgid "Top Menu"
+msgstr ""
+
+#: ../functions.php:32
+msgid "Right Sidebar"
+msgstr "Sidebar phải."
+
+#: ../functions.php:34
+msgid "This is right sidebar"
+msgstr "Đây là sidebar bên phải."
+
+#: ../functions.php:79
+msgid "Read more"
+msgstr "Đọc thêm."
+
+#: ../functions.php:214 ../content.php:15
+msgid "By "
+msgstr "Đăng bởi "
+
+#: ../functions.php:250
+msgid "&larr; Previous"
+msgstr "Trang Trước."
+
+#: ../functions.php:251
+msgid "Next &rarr;"
+msgstr "Trang Sau."
+
+#: ../comments.php:21
+msgid "No Responses"
+msgstr "Không có bình luận nào."
+
+#: ../comments.php:21
+msgid "One Response"
+msgstr "1 Bình Luận."
+
+#: ../comments.php:21
+msgid "% Responses"
+msgstr "% Bình Luận."
+
+#: ../comments.php:43
+msgid "Comments are closed."
+msgstr "Nhận xét bị đóng."
+
+#: ../comments.php:53
+msgid "Leave a Reply"
+msgstr "Bình Luận."
+
+#: ../comments.php:53
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr "Phản hồi cho %s."
+
+#: ../comments.php:86
+msgid "Submit Comment"
+msgstr "Gửi Bình Luận."
+
+#: ../archive.php:6
+#, php-format
+msgid "%1$s Archive"
+msgstr "Lưu trữ của %1$s"
+
+#: ../sidebar.php:5
+msgid "This is widget area. Go to Appearance -> Widget to add some widget."
+msgstr "Đây là vùng để gắn widget."
+
+#: ../footer.php:4
+msgid "All right reserved"
+msgstr ""
+
+#: ../footer.php:4
+msgid "This website is proundly to use Wordpress"
+msgstr "Trang Web này sử dụng "
+
+#: ../404.php:6
+msgid "<h2> 404 NOT FOUND</h2>"
+msgstr "<h2> 404 Không Tìm Thấy </h2>"
+
+#: ../404.php:7
+msgid "<p>The article you were looking for was not founf.</p>"
+msgstr "<p>Đường dẫn đến bài viết không đúng hoặc bài viết không có</p>"
+
+#: ../content.php:17
+#, php-format
+msgid "at %1$s"
+msgstr "lúc %1$s"
+
+#: ../index.php:8
+msgid "Lastest"
+msgstr "Mới Nhất."
+
+#: ../search.php:14
+#, php-format
+msgid ""
+"Search result for <strong>%1$s</strong>. We found <strong>%2$s</strong> "
+"articles for you"
+msgstr ""
+"Kết quả cho <strong>%1$s</strong>. Tìm thấy <strong>%2$s</strong> bài viết "
+"liên quan."
+
+#, fuzzy
+#~ msgid " Comments"
+#~ msgstr "Gửi Bình Luận."
+
+#, fuzzy
+#~ msgid "This is Search Widget"
+#~ msgstr "Đây là sidebar bên phải."
+
+#, fuzzy
+#~ msgid "This is banner widget"
+#~ msgstr "Đây là sidebar bên phải."
+
+#~ msgid "LASTEST"
+#~ msgstr "Mới Nhất."

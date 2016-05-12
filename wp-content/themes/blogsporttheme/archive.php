@@ -1,20 +1,17 @@
 <?php get_header(); ?>
+<?php ?>
 <div class="content">
 	<section id="main-content">
-		<div class="newest-post">
-			<?php //do_action('carousel_hook',2,3); ?>
-		</div>
-		<div class="lastest-post">
-			<h2><?php _e('Lastest','taipt91'); ?></h2>
+		<div class="archive-post">
+			<h2><?php printf(__('%1$s Archive','taipt91'),single_cat_title('',false)); ?></h2>
 			<?php 
 				if( have_posts()) : 
 					while( have_posts()) : 
 						the_post();
 						get_template_part('content',get_post_format());
-					endwhile;?>
-					<div><?php custom_pagination(); ?>
-					</div>
-				<?php else :
+					endwhile;
+					custom_pagination();
+				else :
 						get_template_part('content','none');
 				endif; 
 					?>
