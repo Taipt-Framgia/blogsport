@@ -2,10 +2,10 @@
 <div class="content">
 	<section id="main-content">
 		<div class="newest-post">
-			<?php do_action('carousel_hook',2,3); ?>
+			<?php //do_action('carousel_hook',2,3); ?>
 		</div>
 		<div class="lastest-post">
-			<h4><?php _e('LASTEST','taipt91'); ?></h4>
+			<h2><?php _e('Lastest','taipt91'); ?></h2>
 			<?php 
 				if( have_posts()) : 
 					while( have_posts()) : 

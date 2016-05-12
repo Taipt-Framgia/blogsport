@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Translate VietNamese For Blogsport\n"
-"POT-Creation-Date: 2016-05-12 08:14+0800\n"
-"PO-Revision-Date: 2016-05-12 08:17+0800\n"
+"POT-Creation-Date: 2016-05-12 16:28+0800\n"
+"PO-Revision-Date: 2016-05-12 16:29+0800\n"
 "Last-Translator: \n"
 "Language-Team: Taipt-Framgia <phungbk21@gmail.com>\n"
 "Language: VietNamese\n"
@@ -44,15 +44,15 @@ msgstr "Đây là sidebar bên phải."
 msgid "Read more"
 msgstr "Đọc thêm."
 
-#: ../functions.php:155 ../content.php:15
+#: ../functions.php:214 ../content.php:15
 msgid "By "
 msgstr "Đăng bởi "
 
-#: ../functions.php:188
+#: ../functions.php:250
 msgid "&larr; Previous"
 msgstr "Trang Trước."
 
-#: ../functions.php:189
+#: ../functions.php:251
 msgid "Next &rarr;"
 msgstr "Trang Sau."
 
@@ -92,7 +92,7 @@ msgstr "Lưu trữ của %1$s"
 
 #: ../sidebar.php:5
 msgid "This is widget area. Go to Appearance -> Widget to add some widget."
-msgstr ""
+msgstr "Đây là vùng để gắn widget."
 
 #: ../footer.php:4
 msgid "All right reserved"
@@ -102,11 +102,43 @@ msgstr ""
 msgid "This website is proundly to use Wordpress"
 msgstr "Trang Web này sử dụng "
 
+#: ../404.php:6
+msgid "<h2> 404 NOT FOUND</h2>"
+msgstr "<h2> 404 Không Tìm Thấy </h2>"
+
+#: ../404.php:7
+msgid "<p>The article you were looking for was not founf.</p>"
+msgstr "<p>Đường dẫn đến bài viết không đúng hoặc bài viết không có</p>"
+
 #: ../content.php:17
 #, php-format
 msgid "at %1$s"
 msgstr "lúc %1$s"
 
 #: ../index.php:8
-msgid "LASTEST"
+msgid "Lastest"
 msgstr "Mới Nhất."
+
+#: ../search.php:14
+#, php-format
+msgid ""
+"Search result for <strong>%1$s</strong>. We found <strong>%2$s</strong> "
+"articles for you"
+msgstr ""
+"Kết quả cho <strong>%1$s</strong>. Tìm thấy <strong>%2$s</strong> bài viết "
+"liên quan."
+
+#, fuzzy
+#~ msgid " Comments"
+#~ msgstr "Gửi Bình Luận."
+
+#, fuzzy
+#~ msgid "This is Search Widget"
+#~ msgstr "Đây là sidebar bên phải."
+
+#, fuzzy
+#~ msgid "This is banner widget"
+#~ msgstr "Đây là sidebar bên phải."
+
+#~ msgid "LASTEST"
+#~ msgstr "Mới Nhất."

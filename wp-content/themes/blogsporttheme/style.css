@@ -49,11 +49,12 @@ body {
 #sidebar ul,
 #sidebar ol,
 #sidebar li {
-	margin: 0;
+	margin-bottom: 15px;
 	list-style: none;
 	padding: 0;
 }
 .search-form {
+	padding: 10px 10px 10px 10px;
 	margin-bottom: 20px;
 }
 
@@ -147,9 +148,66 @@ h4.title {
 	background-color: #5C4C4C;
 }
 .widgettitle {
-	background-color: #DB6666;
+	background-color: #000000;
 }
-h3.widgettitle{
+h3.widgettitle {
 	margin: 0;
-	padding: 15px 0;
+	padding: 15px 0 15px 20px;
+	font-weight: bold;
+	color: #ffffff;
+}
+.widget_banner-widget img {
+	width: 100%;
+	height: auto;
+}
+.feature-category-container {
+	background-color: #ffffff;
+}
+.feature-category-container .media {
+	border-bottom: 1px solid #C8C8C8;
+	padding-left: 5px;
+	padding-bottom: 5px;
+}
+.media:first-child {
+	padding-top: 15px
+}
+.top-posts-container {
+	background-color: #ffffff;
+}
+.top-posts-container .media {
+	border-bottom: 1px solid #C8C8C8;
+	padding-left: 5px;
+	padding-bottom: 5px;
+}
+.media h1 {
+	font-size: 50px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.lastest-post h2,
+.archive-post h2 {
+	color: #ffffff;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.entry-category a{
+	font-weight: bold;
+	background-color: #AB0000;
+	color: #FFFE0C!important;
+	padding: 5px;
+}
+.entry-category a:hover {
+	color: #00C709!important;
+}
+.not-found {
+	font-weight: bold;
+	color: #ffffff;
+	text-align: center;
+}
+.not-found img {
+	width: 100%;
+	height: auto;
+}
+.search-info {
+	background-color: #ffffff;
 }

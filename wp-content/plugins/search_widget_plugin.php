@@ -22,10 +22,10 @@ class Search_Widget extends WP_Widget {
      **/
     function __construct() {
       	parent::__construct(
-      		'search_widget',
-      		'Search Widget',
+      		'search-widget',
+      		__('Search Widget','taipt91'),
       		array(
-      			'description' => 'This is Search Widget'
+      			'description' => __('This is Search Widget','taipt91')
       			)
       		);
     }
@@ -45,6 +45,7 @@ class Search_Widget extends WP_Widget {
        	$instance = $old_instance;
 		$instance['title'] = strip_tags($new_instance['title']);
 		return $instance;
+		get_search_form( );
     }
 
   
@@ -55,8 +56,8 @@ class Search_Widget extends WP_Widget {
         echo $before_title;
         echo $title;
         echo $after_title;?>
-        <form class="form-inline search-form">
-    		<input type="text" class="form-control" id="exampleInputEmail2" placeholder="">
+        <form class="form-inline search-form" method="get" action="<?php echo esc_url(home_url('/')); ?>">
+    		<input type="text" class="form-control" value="<?php echo get_search_query(); ?>" name="s" id="s">
   			<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
 		</form>
     	<?php echo $after_widget;

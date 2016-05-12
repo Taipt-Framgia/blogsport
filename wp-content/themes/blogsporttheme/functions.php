@@ -130,7 +130,7 @@ if (! function_exists('add_carousel')) {
 				</a>
 			</div>
 
-		<?php 
+		<?php
 		else :
 			do_action('default_carousel_hook');
 		endif;
@@ -233,8 +233,11 @@ if(! function_exists('print_author_link')) {
 	}
 }
 //custom pagination
-function custom_pagination() {
-    global $wp_query;
+function custom_pagination($query=null) {
+	if(isset($query))
+		$wp_query = $query;
+	else
+    	global $wp_query;
     $big = 999999999;
     $pages = paginate_links(array(
         'base' => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),

@@ -39,7 +39,3 @@
 			<?php do_action('relate_hook')?>
 		</div>
 </div>
-
-<div class="comment-section section-css">
-	<?php comments_template(); ?>
-</div>

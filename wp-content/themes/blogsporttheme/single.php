@@ -2,14 +2,17 @@
 <div class="content">
 	<section id="main-content">
 		<div class="">
-			<?php 
+			<?php
 				if( have_posts()) : 
-					while( have_posts()) : 
-						the_post();
-						get_template_part('content','detail');
-					endwhile;
-				endif;
-					?>
+					while( have_posts()) : the_post();?>
+						<?php get_template_part('content','detail');  ?>
+						<div class="comment-section section-css">
+							<?php comments_template(); ?>
+							<?php the_permalink(); ?>
+							<?php var_dump($post); ?>
+						</div>
+					<?php endwhile;?>
+				<?php endif; ?>
 		</div>
 	</section> 
 	
