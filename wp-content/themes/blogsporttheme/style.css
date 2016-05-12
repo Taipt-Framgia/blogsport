@@ -185,7 +185,9 @@ h3.widgettitle {
 	padding-right: 10px;
 }
 .lastest-post h2,
-.archive-post h2 {
+.archive-post h2,
+.relate-post h3,
+.author-box h3 {
 	color: #ffffff;
 	padding-left: 10px;
 	padding-right: 10px;

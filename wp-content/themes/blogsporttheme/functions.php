@@ -220,7 +220,10 @@ if (! function_exists('add_relate')) {
 		  		</div>
 		  	<?php endwhile; ?>
 		  	</div>
-		 <?php endif; ?>
+		 <?php endif; 
+		 wp_reset_query();
+		 ?>
+
 	<?php }		
 }
 add_action('relate_hook','add_relate');

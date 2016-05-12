@@ -18,7 +18,7 @@
 <!-- You can start editing here. -->
 
 <?php if ( have_comments() ) : ?>
-	<h3 id="comments"><?php comments_number('No Responses', 'One Response', '% Responses' );?> to &#8220;<?php the_title(); ?>&#8221;</h3>
+	<h3 id="comments"><?php comments_number(__('No Responses'.'taipt91'), __('One Response','taipt91'), __('% Responses','taipt91') );?> to &#8220;<?php the_title(); ?>&#8221;</h3>
 
 	<div class="navigation">
 		<div class="alignleft"><?php previous_comments_link() ?></div>
@@ -50,7 +50,7 @@
 
 <div id="respond">
 
-<h3><?php comment_form_title( 'Leave a Reply', 'Leave a Reply to %s' ); ?></h3>
+<h3><?php comment_form_title( __('Leave a Reply','taipt91'), __('Leave a Reply to %s','taipt91') ); ?></h3>
 
 <div class="cancel-comment-reply">
 	<small><?php cancel_comment_reply_link(); ?></small>
@@ -83,7 +83,7 @@
 
 <p><textarea name="comment" id="comment" cols="58" rows="10" tabindex="4"></textarea></p>
 
-<p><input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
+<p><input name="submit" type="submit" id="submit" tabindex="5" value="<?php printf(__('Submit Comment','taipt91'));  ?>" />
 <?php comment_id_fields(); ?>
 </p>
 <?php do_action('comment_form', $post->ID); ?>
