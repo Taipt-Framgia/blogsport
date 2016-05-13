@@ -76,7 +76,7 @@ class Feature_Category_Widget extends WP_Widget {
                     <div class="media-left media-middle">
                       <a href="<?php the_permalink();?>">
                         <?php if (has_post_thumbnail()): ?>
-                        <?php echo '<img href="'.the_post_thumbnail(array(64,64)).'">'; ?>
+                        <?php echo the_post_thumbnail(array(64,64)); ?>
                         <?php else: ?>
                          <img src="http://placehold.it/64x64">
                         <?php endif; ?>

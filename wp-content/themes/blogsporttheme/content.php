@@ -2,7 +2,7 @@
 	<div class="w3-card-4 entry-post">
   		<a href="<?php the_permalink();?>">
 	  		<?php if (has_post_thumbnail()): ?>
-	  		<?php echo '<img href="'.the_post_thumbnail('thumbnail').'">'; ?>
+	  		<?php the_post_thumbnail('thumbnail'); ?>
 	  		<?php else:
 	  			echo '<img src="http://placehold.it/400x200">';
 	  		endif; ?>

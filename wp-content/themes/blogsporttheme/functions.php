@@ -104,7 +104,7 @@ if (! function_exists('add_carousel')) {
 					<?php $my_query->the_post(); ?>
 						<div class="item" >
 							<?php if (has_post_thumbnail()): ?>
-	  								<?php echo '<img href="'.the_post_thumbnail('full').'">'; ?>
+	  								<?php the_post_thumbnail('full'); ?>
 	  						<?php else: ?>
 	  							<img src="http://placehold.it/1200x600">
 	  						<?php endif; ?>
@@ -203,7 +203,7 @@ if (! function_exists('add_relate')) {
 		    		<div class="thumbnail">
 		    			<a href="<?php the_permalink(); ?>">
 		    			<?php if (has_post_thumbnail()): ?>
-	  					<?php echo '<img href="'.the_post_thumbnail(array(200,100)).'">'; ?>
+	  					<?php the_post_thumbnail(array(200,100)); ?>
 	  					<?php else: ?>
 	  						<img src="http://placehold.it/200x100">
 	  					<?php endif; ?>
