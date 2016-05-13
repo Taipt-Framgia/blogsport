@@ -18,7 +18,7 @@
 <!-- You can start editing here. -->
 
 <?php if ( have_comments() ) : ?>
-	<h3 id="comments"><?php comments_number(__('No Responses'.'taipt91'), __('One Response','taipt91'), __('% Responses','taipt91') );?> to &#8220;<?php the_title(); ?>&#8221;</h3>
+	<h3 id="comments"><?php comments_number(__('No Responses','taipt91'), __('One Response','taipt91'), __('% Responses','taipt91') );?> to &#8220;<?php the_title(); ?>&#8221;</h3>
 
 	<div class="navigation">
 		<div class="alignleft"><?php previous_comments_link() ?></div>
@@ -40,7 +40,7 @@
 
 	 <?php else : // comments are closed ?>
 		<!-- If comments are closed. -->
-		<p class="nocomments">Comments are closed.</p>
+		<p class="nocomments"><?php _e('Comments are closed','taipt91'); ?></p>
 
 	<?php endif; ?>
 <?php endif; ?>
@@ -64,26 +64,26 @@
 
 <?php if ( is_user_logged_in() ) : ?>
 
-<p>Logged in as <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>. <a href="<?php echo wp_logout_url(get_permalink()); ?>" title="Log out of this account">Log out &raquo;</a></p>
+<p><?php _e('Logged in as','taipt91') ?> <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>. <a href="<?php echo wp_logout_url(get_permalink()); ?>" title="Log out of this account"><?php _e('Log out &raquo;','taipt91') ?></a></p>
 
 <?php else : ?>
 
 <p><input type="text" name="author" id="author" value="<?php echo esc_attr($comment_author); ?>" size="22" tabindex="1" <?php if ($req) echo "aria-required='true'"; ?> />
-<label for="author"><small>Name <?php if ($req) echo "(required)"; ?></small></label></p>
+<label for="author"><small><?php _e('Name','taipt91'); ?> <?php if ($req) echo "(required)"; ?></small></label></p>
 
 <p><input type="text" name="email" id="email" value="<?php echo esc_attr($comment_author_email); ?>" size="22" tabindex="2" <?php if ($req) echo "aria-required='true'"; ?> />
-<label for="email"><small>Mail (will not be published) <?php if ($req) echo "(required)"; ?></small></label></p>
+<label for="email"><small><?php _e('Mail (will not be published)','taipt91'); ?> <?php if ($req) echo "(required)"; ?></small></label></p>
 
 <p><input type="text" name="url" id="url" value="<?php echo esc_attr($comment_author_url); ?>" size="22" tabindex="3" />
-<label for="url"><small>Website</small></label></p>
+<label for="url"><small><?php _e('Website','taipt91'); ?></small></label></p>
 
 <?php endif; ?>
 
 <!--<p><small><strong>XHTML:</strong> You can use these tags: <code><?php echo allowed_tags(); ?></code></small></p>-->
 
-<p><textarea name="comment" id="comment" cols="58" rows="10" tabindex="4"></textarea></p>
+<p><textarea name="comment" id="comment" class="form-control" cols="58" rows="10" tabindex="4"></textarea></p>
 
-<p><input name="submit" type="submit" id="submit" tabindex="5" value="<?php printf(__('Submit Comment','taipt91'));  ?>" />
+<p><input name="submit" class="btn btn-primary" type="submit" id="submit" tabindex="5" value="<?php printf(__('Submit Comment','taipt91'));  ?>" />
 <?php comment_id_fields(); ?>
 </p>
 <?php do_action('comment_form', $post->ID); ?>

@@ -15,7 +15,6 @@
 						get_template_part('content','none');
 				endif; 
 					?>
-
 		</div>
 	</section> 
 	

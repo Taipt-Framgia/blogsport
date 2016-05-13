@@ -208,7 +208,11 @@ if (! function_exists('add_relate')) {
 	  						<img src="http://placehold.it/200x100">
 	  					<?php endif; ?>
 	  					</a>
-	  					<p class="entry-category"><?php echo get_the_category_list(' , '); ?></p>
+	  					<p class="entry-category"><?php
+											$category = get_the_category();
+											printf('<a href="%1$s" >%2$s</a>',get_category_link($category[0]->term_id),$category[0]->cat_name);
+											?>
+						</p>
 		      			<div class="caption">
 		        			<h4 class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
 		        			<p><?php echo __('By ','taipt91'); 

@@ -76,7 +76,8 @@ body {
 	padding-right: 20px;
 }
 /* single post content */
-.single .post-content {
+.single .post-content,
+.comment-section #respond {
 	padding-left: 20px;
 	padding-bottom: 15px;
 	padding-right: 20px;
@@ -90,6 +91,20 @@ body {
 
 footer {
 	line-height: 3;
+}
+footer#footer {
+	/* background-color: #171212!important; */
+}
+footer .copyright {
+	font-weight: bold;
+	color: #ffffff;
+	text-align: center;
+	background-color: #090000!important;
+	width: 1024px;
+	margin: auto;
+	border: 1px solid #D1D1D1;
+	/* padding: 10px 25px; */
+	overflow: hidden;
 }
 
 /* override css */
@@ -201,6 +216,13 @@ h3.widgettitle {
 .entry-category a:hover {
 	color: #00C709!important;
 }
+.entry-meta a,
+.author-box a, 
+#commentform a{
+	font-weight: bold;
+
+}
+
 .not-found {
 	font-weight: bold;
 	color: #ffffff;
@@ -212,4 +234,41 @@ h3.widgettitle {
 }
 .search-info {
 	background-color: #ffffff;
+}
+a.read-more {
+	display: inline-block;
+	float: right;
+	padding: 5px 5px 0px 5px	;
+	font-weight: bold;
+}
+.no-post {
+	background-color: #ffffff;
+	text-align: center;
+	font-size: 50px;
+}
+.custom-breadscrumb .breadcrumb{
+	font-weight: bold;
+	display: inline-block;
+	border-bottom: 2px solid sandybrown;
+}
+ol.commentlist,
+ol.commentlist ul {
+	list-style-type: none;
+}
+ol li .comment-body p {
+	padding: 8px;
+	border-bottom: 1px solid #EFEFEF;
+	border-top: 1px solid #EFEFEF;
+}
+ol li {
+	margin-bottom: 5px;
+}
+.comment-section h3 {
+	padding-left: 10px;
+}
+.reply a {
+	font-weight: bold;
+}
+.reply {
+	padding-bottom: 10px;
 }

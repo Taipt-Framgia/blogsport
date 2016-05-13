@@ -9,7 +9,7 @@
 <body <?php body_class(); ?> >
 	<nav class="menu content"><?php add_site_menu('top-menu'); ?></nav>
 	<section id="carousel">
-		<?php //do_action('carousel_hook',1,5); ?>			
+		<?php do_action('carousel_hook',1,5); ?>			
 	</section>
 	<div class="container">
 		

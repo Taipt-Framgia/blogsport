@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Translate VietNamese For Blogsport\n"
-"POT-Creation-Date: 2016-05-12 16:28+0800\n"
-"PO-Revision-Date: 2016-05-12 16:29+0800\n"
+"POT-Creation-Date: 2016-05-13 09:13+0800\n"
+"PO-Revision-Date: 2016-05-13 09:14+0800\n"
 "Last-Translator: \n"
 "Language-Team: Taipt-Framgia <phungbk21@gmail.com>\n"
 "Language: VietNamese\n"
@@ -44,21 +44,21 @@ msgstr "Đây là sidebar bên phải."
 msgid "Read more"
 msgstr "Đọc thêm."
 
-#: ../functions.php:214 ../content.php:15
+#: ../functions.php:214 ../content.php:19
 msgid "By "
 msgstr "Đăng bởi "
 
-#: ../functions.php:250
+#: ../functions.php:253
 msgid "&larr; Previous"
 msgstr "Trang Trước."
 
-#: ../functions.php:251
+#: ../functions.php:254
 msgid "Next &rarr;"
 msgstr "Trang Sau."
 
 #: ../comments.php:21
 msgid "No Responses"
-msgstr "Không có bình luận nào."
+msgstr "Không Có Bình Luận."
 
 #: ../comments.php:21
 msgid "One Response"
@@ -69,7 +69,8 @@ msgid "% Responses"
 msgstr "% Bình Luận."
 
 #: ../comments.php:43
-msgid "Comments are closed."
+#, fuzzy
+msgid "Comments are closed"
 msgstr "Nhận xét bị đóng."
 
 #: ../comments.php:53
@@ -80,6 +81,26 @@ msgstr "Bình Luận."
 #, php-format
 msgid "Leave a Reply to %s"
 msgstr "Phản hồi cho %s."
+
+#: ../comments.php:67
+msgid "Logged in as"
+msgstr "Đang đăng nhập với tài khoản: "
+
+#: ../comments.php:67
+msgid "Log out &raquo;"
+msgstr "Đăng Xuất &raquo;"
+
+#: ../comments.php:72
+msgid "Name"
+msgstr "Tên."
+
+#: ../comments.php:75
+msgid "Mail (will not be published)"
+msgstr "Mail (không hiện ra)."
+
+#: ../comments.php:78
+msgid "Website"
+msgstr "Trang Web"
 
 #: ../comments.php:86
 msgid "Submit Comment"
@@ -94,6 +115,10 @@ msgstr "Lưu trữ của %1$s"
 msgid "This is widget area. Go to Appearance -> Widget to add some widget."
 msgstr "Đây là vùng để gắn widget."
 
+#: ../content-none.php:2
+msgid "There is no post found"
+msgstr "Không có bài  viết  nào  được tìm thấy."
+
 #: ../footer.php:4
 msgid "All right reserved"
 msgstr ""
@@ -107,10 +132,11 @@ msgid "<h2> 404 NOT FOUND</h2>"
 msgstr "<h2> 404 Không Tìm Thấy </h2>"
 
 #: ../404.php:7
-msgid "<p>The article you were looking for was not founf.</p>"
+#, fuzzy
+msgid "<p>The article you were looking for was not found.</p>"
 msgstr "<p>Đường dẫn đến bài viết không đúng hoặc bài viết không có</p>"
 
-#: ../content.php:17
+#: ../content.php:21
 #, php-format
 msgid "at %1$s"
 msgstr "lúc %1$s"
@@ -127,6 +153,10 @@ msgid ""
 msgstr ""
 "Kết quả cho <strong>%1$s</strong>. Tìm thấy <strong>%2$s</strong> bài viết "
 "liên quan."
+
+#, fuzzy
+#~ msgid "No Responsestaipt91"
+#~ msgstr "Không có bình luận nào."
 
 #, fuzzy
 #~ msgid " Comments"

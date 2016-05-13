@@ -1,11 +1,10 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class();  ?>>
 	<div class="w3-card-4 entry-post">
 	  	<div class="w3-container post-content">
-		  	<div class="">
+		  	<div class="custom-breadscrumb">
 		  		<ol class="breadcrumb">
-		  			<li><a href="#">Home</a></li>
-		  			<li><a href="#">Cat1</a></li>
-		  			<li><a href="#">Cat2</a></li>
+		  			<li><a href="#">Home /</a></li>
+		  			<?php echo get_the_category_list(' / 	'); ?>
 		  		</ol>
 		  	</div>
 	    	<h3 class="post-header"><b><?php the_title(); ?></b></h3>
@@ -15,7 +14,7 @@
 	    				get_author_posts_url(get_the_author_meta('ID')),
 	    				get_the_author(), 
 	    				get_the_date(), 
-	    				get_the_category_list(' + ')); 
+	    				get_the_category_list(' , ')); 
 	    			?>
 	    	</p>
 	    	<p class="entry-content"><?php the_content(); ?></p>
